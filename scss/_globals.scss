@@ -10,6 +10,8 @@
     --veryDarkBlue: hsl(233, 12%, 13%);
     --veryPaleRed: hsl(13, 100%, 96%);
     --varyLightGray: hsl(0, 0%, 98%);
+    --headerHeight: 95px;
+    --white: #ffffff;
 }
 html{
     box-sizing: border-box;
@@ -20,5 +22,80 @@ body{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;/*1.5 * fsize = 1.5 * 16 = 18px*/
-}
+    color: var(--darkGrayishBlue);
 
+    background: var(--varyLightGray) url(../images/bg-tablet-pattern.svg) top -50px right -30px no-repeat;
+    background-size: 400px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5{
+    color: var(--darkBlue);
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, p{
+    margin-top: 0;
+}
+p{
+    line-height: 2;
+}
+ul{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button,
+input{
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border: none;
+}
+.about__title,
+.testimonial__title{
+    font-size: 32px;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 27px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    &--primary{
+        background-color: var(--brightRed);
+        border-color: var(--brightRed);
+        box-shadow: 0 5px 10px rgba(242, 95, 58,.5);
+        color: var(--varyLightGray);
+        &:hover{
+            opacity: .5;
+        }
+    }
+    &--secondary{
+        background-color: var(--varyLightGray);
+        border-color: var(--varyLightGray);
+        box-shadow: 0 5px 10px rgba(242, 95, 58,.5);
+        color: var(--brightRed);
+        &:hover{
+           color: #F7D3CB;
+        }
+    }
+}
+.field{
+    $paddingY: 15px;
+    $fsize: 14px;
+    $height: (($paddingY * 2) + $fsize + 2px);
+    display: block;
+    padding: $paddingY 25px;
+    min-height: $height;
+    border-radius: ($height/ 2);
+    font-size: $fsize;
+}

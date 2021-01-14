@@ -1,0 +1,100 @@
+.footer{
+    position: relative;
+    background-color: var(--veryDarkBlue);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+    &__brand{
+        @media (max-width: 800px) {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__menu{
+
+    }
+    &__menu-item{
+        a{
+            color: var(--varyLightGray);
+        }
+    }
+    &__logo,
+    &__copy{
+        text-align: center;
+    }
+    &__logo{
+        margin-bottom: 50px;
+        @media (max-width: 800px) {
+            order: 2;
+        }
+        img{
+            width: 160px;
+        }
+    }
+    &__copy{
+        margin-bottom: 0;
+        @media (min-width: 800px) {
+            text-align: right;
+        }
+        @media (max-width: 800px) {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+        }
+    }
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        @media (min-width: 800px) {
+            margin-bottom: 0;
+        }
+    }
+    &__social-item{
+        a{
+            font-size: 34px;
+            color: var(--varyLightGray);
+            @media (min-width: 800px) {
+                font-size: 24px;
+            }
+        }
+        @media (max-width: 800px) {
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+    }
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        @media (min-width: 800px) {
+            justify-content: space-between;
+        }
+    }
+    &__btn{
+        text-transform: uppercase;
+        box-shadow: none;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &__field{
+        margin-right: 10px;
+    }
+    &__suscribe{
+        @media (max-width: 800px) {
+            order: -1;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.notice{
+    background-color: var(--brightRed);
+    background-image: url('../images/bg-simplify-section-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 400px;
+    @media (max-width: 800px) {
+        text-align: center;
+    }
+    &__wrapper{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        @media (min-width: 800px) {
+            flex-flow: row;
+            justify-content: space-between;
+        }
+    }
+    &__text{
+        color: var(--varyLightGray);
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.5;
+        max-width: 500px;
+    }
+}

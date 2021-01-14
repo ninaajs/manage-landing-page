@@ -1,0 +1,31 @@
+.hero{
+    margin-bottom: 40px;
+    &__wrapper{
+        @media (min-width: 800px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: calc(100vh - var(--headerHeight));
+        }
+    }
+    &__info{
+        text-align: center;
+        @media (min-width: 800px) {
+            order: -1;
+            text-align: initial;
+            max-width: 430px;
+        }
+
+    }
+    &__title{
+        font-size: 38px;
+        line-height: 1.2;
+        @media (min-width: 800px) {
+            font-size: 48px;
+        }
+    }
+    &__image{
+        max-width: 500px;
+        width: 100%;
+    }
+}
