@@ -24,6 +24,10 @@
     &__menu-item{
         a{
             color: var(--varyLightGray);
+            transition: color .2s ease-in;
+            &:hover{
+                color: var(--brightRed);
+            }
         }
     }
     &__logo,
@@ -63,6 +67,10 @@
         a{
             font-size: 34px;
             color: var(--varyLightGray);
+            transition: color .2s ease-in;
+            &:hover{
+                color: var(--brightRed);
+            }
             @media (min-width: 800px) {
                 font-size: 24px;
             }

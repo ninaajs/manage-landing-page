@@ -1,0 +1,92 @@
+.slider{
+    $sizeImage: 75px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    &__track{
+        padding-top: $sizeImage/2 + 10px;
+        display: flex;
+        margin-bottom: 30px;
+        transform: translateX(0);
+        transition: transform .5s ease-in;
+    }
+    &__slide{
+        flex-shrink: 0;
+        max-width: 520px;
+        width: 100%;
+        position: relative;
+        background-color: var(--varyLightGray);
+        padding: ($sizeImage / 2 + 25px) 30px 30px;
+        text-align: center;
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+    &__image{
+        width: $sizeImage;
+        height: $sizeImage;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__title{
+    }
+    &__quote{
+
+    }
+    &__controls{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &__control{
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--darkGrayishBlue);
+        transition: color .5s ease, opacity .2s ease-in;
+        opacity: 0;
+
+        &:hover{
+            color: var(--brightRed);
+        }
+        &:disabled{
+            cursor: auto;
+            &:hover{
+                color: inherit;
+            }
+        }
+    }
+    
+    &__pagination{
+        display: flex;
+        justify-content: center;
+    }
+    &__page{
+        margin: 0 5px;
+        &--active .slider__btn{
+            background-color: var(--brightRed);
+        }
+    }
+    &__btn{
+        width: 20px;
+        height: 20px;
+        border: 2px solid var(--brightRed);
+        background: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &:hover &__control{
+        opacity: 1;
+    }
+
+}

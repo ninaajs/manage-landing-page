@@ -1,3 +1,7 @@
+import Slider from "./slider.js";
+
+new Slider();
+
 const hamburger = document.getElementById('hamburger');
 const menuHamburger = document.getElementById('menuHamburger');
 hamburger.addEventListener('click', function(){

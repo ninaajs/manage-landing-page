@@ -24,7 +24,7 @@ body{
     line-height: 1.5;/*1.5 * fsize = 1.5 * 16 = 18px*/
     color: var(--darkGrayishBlue);
 
-    background: var(--varyLightGray) url(../images/bg-tablet-pattern.svg) top -50px right -30px no-repeat;
+    background: var(--white) url(../images/bg-tablet-pattern.svg) top -50px right -30px no-repeat;
     background-size: 400px;
 }
 img{
@@ -57,6 +57,10 @@ input{
     font-size: inherit;
     outline: none;
     border: none;
+}
+.main{
+    margin-bottom: 100px;
+    padding: .1px;
 }
 .about__title,
 .testimonial__title{

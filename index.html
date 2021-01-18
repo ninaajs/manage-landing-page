@@ -96,15 +96,38 @@
       </section>
       <section class="testimonial">
         <h2 class="testimonial__title">What they’ve said</h2>
-        <div class="testimonial__item">
-          <div class="testimonial__photo">
-            <img src="./images/avatar-ali.png" alt="Ali">
-            <h4>Anisha Li</h4>
-            <p>
-              “We have been able to cancel so many other subscriptions since using 
-              Manage. There is no more cross-channel confusion and everyone is much 
-              more focused.”
-            </p>
+        <div id="slider" class="testimonial__slider slider">
+          <ul id="trackSlider" class="slider__track">
+            <li class="slider__slide">
+              <img class="slider__image" src="./images/avatar-anisha.png" alt="Anisha">
+              <h4 class="slider__title">Anisha Li</h4>
+              <p class="slider__quote">“Manage has supercharged our team’s workflow. The ability to maintain 
+                visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </li>
+            <li class="slider__slide">
+              <img class="slider__image" src="./images/avatar-ali.png" alt="Ali Bravo">
+              <h4 class="slider__title">Ali Bravo</h4>
+              <p class="slider__quote">“We have been able to cancel so many other subscriptions since using 
+                Manage. There is no more cross-channel confusion and everyone is much 
+                more focused.”</p>
+            </li>
+            <li class="slider__slide">
+              <img class="slider__image" src="./images/avatar-richard.png" alt="Richard Watts">
+              <h4 class="slider__title">Richard Watts</h4>
+              <p class="slider__quote">“Manage has supercharged our team’s workflow. The ability to maintain 
+                visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </li>
+            <li class="slider__slide">
+              <img class="slider__image" src="./images/avatar-shanai.png" alt="Shanai Gough">
+              <h4 class="slider__title">Shanai Gough</h4>
+              <p class="slider__quote">“Their software allows us to track, manage and collaborate on our projects 
+                from anywhere. It keeps the whole team in-sync without being intrusive.”
+              </p>
+            </li>
+          </ul>
+          <div class="slider__controls">
+            <button id="prevButtonSlider" class="slider__control slider__control--prev"><ion-icon name="arrow-back-outline"></ion-icon></button>
+            <button id="nextButtonSlider" class="slider__control slider__control--next"><ion-icon name="arrow-forward-outline"></ion-icon></button>
           </div>
         </div>
         <a class="btn btn--primary" href="">Get Started</a>
@@ -125,11 +148,11 @@
             <img src="./images/logo-dark.svg" alt="Manage">
           </div>
           <ul class="footer__social">
-            <li class="footer__social-item"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li class="footer__social-item"><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
-            <li class="footer__social-item"><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li class="footer__social-item"><a href=""><ion-icon name="logo-pinterest"></ion-icon></a></li>
-            <li class="footer__social-item"><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li class="footer__social-item"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li class="footer__social-item"><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li class="footer__social-item"><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li class="footer__social-item"><a href="#"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+            <li class="footer__social-item"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
           </ul>
         </div>
         <ul class="footer__menu">
@@ -180,6 +203,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>-->
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-<script src="./js/main.js" defer></script>
+<script src="./js/main.js" type="module" defer></script>
 </body>
 </html>
