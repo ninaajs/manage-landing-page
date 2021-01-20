@@ -26,6 +26,10 @@ body{
 
     background: var(--white) url(../images/bg-tablet-pattern.svg) top -50px right -30px no-repeat;
     background-size: 400px;
+    @media (min-width: 800px) {
+        background-position: top -230px right -160px;
+        background-size: 55%;
+    }
 }
 img{
     max-width: 100%;
@@ -61,6 +65,9 @@ input{
 .main{
     margin-bottom: 100px;
     padding: .1px;
+    @media (min-width: 800px) {
+        background: url(../images/bg-tablet-pattern.svg) no-repeat left -400px bottom 200px/ 50%;
+    }
 }
 .about__title,
 .testimonial__title{

@@ -1,11 +1,13 @@
 .notice{
-    background-color: var(--brightRed);
-    background-image: url('../images/bg-simplify-section-mobile.svg');
-    background-repeat: no-repeat;
-    background-position: left center;
-    height: 400px;
+    background: var(--brightRed) url('../images/bg-simplify-section-mobile.svg') no-repeat left center;
+    height: 360px;
     @media (max-width: 800px) {
         text-align: center;
+    }
+    @media (min-width: 800px) {
+        background-image: url('../images/bg-simplify-section-desktop.svg');
+        background-position: bottom left 120px;
+        height: 220px;
     }
     &__wrapper{
         display: flex;
@@ -24,5 +26,8 @@
         font-weight: 700;
         line-height: 1.5;
         max-width: 500px;
+        @media (min-width: 800px) {
+            margin-bottom: 0;
+        }
     }
 }

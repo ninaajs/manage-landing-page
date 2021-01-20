@@ -12,7 +12,9 @@
         }
     }
     &__list{
-        max-width: 500px;
+        @media (min-width: 800px) {
+            max-width: 500px;
+        }
     }
     &__text{
         @media (min-width: 800px) {
